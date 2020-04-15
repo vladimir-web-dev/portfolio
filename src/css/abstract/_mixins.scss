@@ -1,0 +1,51 @@
+//Media
+@mixin laptops {
+    @media screen and (max-width: $laptops) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
+//Fonts
+@mixin opensans($style: regular, $italic: normal) {
+	font-family: 'OpenSans', Helvetica, sans-serif;
+
+	@if $style == light {
+		font-weight: 300;
+	}
+
+	@if $style == regular {
+		font-weight: 400;
+    }
+
+    @if $style == bold {
+		font-weight: 600;
+    }
+
+    @if $style == semibold {
+		font-weight: 700;
+	}
+
+	@if $style == extrabold {
+		font-weight: 800;
+    }
+
+    @if $italic == normal {
+		font-style: normal;
+	}
+    
+    @if $italic == italic {
+		font-style: italic;
+	}
+}

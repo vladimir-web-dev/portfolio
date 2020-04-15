@@ -1,0 +1,105 @@
+html,
+body {
+	min-height: 100%;	
+}
+
+html {
+	font-size: 16px;
+
+	@include tablets {
+		font-size: 15px;
+	}	
+
+	@include phones {
+		font-size: 13px;
+	}
+}
+
+body {
+	margin: 0;
+    padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+    @include opensans();
+	font-size: rem(14px);
+	line-height: 1.42;
+	color: $light;
+
+}
+
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+ul {
+	margin: 0;
+    padding: 0;
+    
+    li {
+        list-style: none;
+    }
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+textarea,
+input {
+	outline: none;
+	background: none;
+	border: none;
+}
+
+a {
+    text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	margin: 0;
+	font-weight: normal;
+	line-height: 1;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%
+}
+
+address {
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
